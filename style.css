@@ -1,0 +1,301 @@
+body {
+  font-family: cabin, serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #0B1D26;
+  color: #fff;
+  cursor: default;
+  overflow-x: hidden;
+}
+header {
+  z-index: 10;
+  display: flex;
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  align-items: center; /* center vertical elements with display flex*/
+  justify-content: space-between;
+}
+img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*######### Navigation bar and elements #########*/
+.logo {
+  font-size: 42px;
+  letter-spacing: 5px;
+  /* width: fit-content; */
+  margin-left: 100px;
+  font-weight: 900;
+}
+
+.headerNav {
+  display: inherit;
+  justify-content: inherit;
+  width: 360px;
+}
+.headerNav button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  position: relative;
+  transition: color .3s ease;
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: rgb(251, 215, 132);
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  transform: scale(0, 1);
+  transition: transform .3s ease;
+}
+.btn:hover::after {
+  transform: scale(1, 2);
+}
+.btn:hover {
+  color: rgb(251, 215, 132);
+}
+
+.login {
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.login_img {
+  width: 20px;
+  height: 20px;
+  font-size: 17px;
+  margin-right: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.border_animation {
+  display: inherit;
+  align-items: inherit;
+  color: #fff;
+  border: 1px solid transparent;
+  padding-bottom: 3px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.border_animation:hover {
+  color: rgba(251, 215, 132, 1);
+  border-bottom: 1px solid rgba(251, 215, 132, 1);
+
+}
+
+.login_accountName {
+  color: inherit;
+}
+
+.login_dropdown {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+
+/*######### imgs with parallax effect #########*/
+.landing_screen {
+  position: relative;
+  height: 110vh;
+  width: 100vw;
+  overflow: hidden; /*Hides the elements outside the container*/
+}
+
+.background_gradient {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
+}
+.sky {
+  position: absolute;
+  z-index: 0;
+}
+.montain_01 {
+  z-index: 2;
+  position: absolute;
+  top: 260px;
+}
+.montain_02 {
+  top: 580px;
+  z-index: 4;
+  position: relative;
+}
+.landing_screen::before {
+  content: "";
+  bottom: 0;
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+}
+
+
+/*######### texts with parallax effect #########*/
+.main_title {
+  position: fixed;
+  top: 27%;
+  left: 30%;
+  z-index: 3;
+  font-size: 47px;
+  opacity: 1;
+}
+h1, h6 {
+  margin: 0px;
+}
+.sub_title_div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  transition: all 200ms ease;
+  width: fit-content;
+}
+.sub_title {
+  margin-left: 20px;
+  font-size: 20px;
+  color: rgba(251, 215, 132, 1);
+  letter-spacing: 5px;
+}
+.line {
+  width: 60px;
+  height: 2px;
+  background-color: rgba(251, 215, 132, 1);
+}
+.scroll_down_h6 {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.arrow_down {
+  background-image: url("svg/arrow_down_white.svg");
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.sub_title_div2:hover .arrow_down {
+  background-image: url("svg/arrow_down_orange.svg");
+}
+.sub_title_div2:hover {
+  color: rgba(251, 215, 132, 1);
+  cursor: pointer;
+}
+
+/*######### Posts #########*/
+.post_01, .post_03{
+  width: 100%;
+  height: 720px;
+  margin-bottom: 200px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.post_02 {
+  width: 100%;
+  height: 720px;
+  margin-bottom: 200px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.background_number {
+  position: absolute;
+  font-size: 240px;
+  top: 0;
+  z-index: 0;
+  opacity: .1;
+}
+.post_01 img, .post_03 img {
+  margin-left: auto;
+}
+.post_02 img {
+  margin-right: auto;
+}
+.container_text01 {
+  z-index: 1;
+  width: 632px;
+  height: 439px;
+  margin-left: 379px;
+}
+.container_text02 {
+  z-index: 1;
+  width: 632px;
+  height: 439px;
+  margin-right: 229px;
+}
+.text {
+  font-size: 18px;
+  line-height: 38px;
+}
+.text::selection {
+  color: rgb(251, 215, 132);
+  background-color: none;
+}
+.read_more {
+  color:rgba(251, 215, 132, 1);
+cursor: pointer;
+}
+.read_more:hover {
+  color: rgb(255, 239, 205)
+}
+footer {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  list-style-type: none;
+  line-height: 45px;
+}
+.footer_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 35%;
+}
+.footer_section2 {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 35%;
+}
+.li_title {
+  color: rgb(251, 215, 132);
+  font-size: 26px;
+  line-height: 60px;
+}
+.li_hover:hover {
+  cursor: pointer;
+  color: rgb(255, 239, 205);
+}
+.reveal {
+  opacity: 0;
+  transition: all 1s  ease;
+}
+.active {
+  opacity: 1;
+  margin-right: 229px;
+}
+.activeL {
+  opacity: 1;
+  margin-left: 229px;
+}

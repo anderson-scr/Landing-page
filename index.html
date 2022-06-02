@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MNTN | Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      MNTN
+    </div>
+
+    <nav class="headerNav">
+      <button class="btn">Equipment</button>
+      <button class="btn">About Us</button>
+      <button class="btn">Contact Us</button>
+    </nav>
+
+    <div class="login">
+      <img src="svg/user_svg.svg" alt="login_user" class="login_img"></img>
+      <div class="border_animation">
+        <div class="login_accountName"> Account </div>
+        <img src="svg/dropdown_svg.svg" alt="login_dropdown" class="login_dropdown"></img>
+      </div>
+    </div>
+  </header>
+
+  <!--Section used as sky background and div for gradient-->
+  <section class="landing_screen">
+    <div class="background_gradient"></div> <!--Background above all imgs-->
+
+    <img src="img/HG.png" alt="sky" class="sky" id="sky">
+    <img src="img/MG.png" alt="montain_01" class="montain_01" id="montain_01">
+    <img src="img/VG.png" alt="montain_02" class="montain_02" id="montain_02">
+
+    <div class="main_title" id="main_title">
+      <div class="sub_title_div">
+        <div class="line"></div> <!--Yellow line-->
+        <h6 class="sub_title">A HIKING GUIDE</h6>
+      </div>
+      <h1>Be Prepared For The <br> Mountains And Beyond!</h1>
+      <div class="sub_title_div sub_title_div2 scrollDown" onclick="scroll_post01()">
+        <h6 class="scroll_down_h6">Scroll Down</h6>
+        <div class="arrow_down"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="post_01">
+    <h1 class="background_number" style="left: 205px;">01</h1>
+    <div class="container_text01">
+      <div class="sub_title_div">
+        <div class="line"></div> <!--Yellow line-->
+        <h6 class="sub_title" style="font-size: 18px;">Get Started</h6>
+      </div>
+      <h1 style="font-size: 64px; margin-bottom: 50px;">What level of hyker <br> are you?</h1>
+      <p class="text">Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? </p>
+      <h3 class="read_more">Read more...</h3>
+    </div>
+
+    <img src="img/post_01.png" alt="img_post_01" class="reveal">
+  </section>
+
+  <section class="post_02">
+    <img src="img/post_02.png" alt="img_post_01" class="reveal">
+    <h1 class="background_number" style="left: 45%;">02</h1>
+    <div class="container_text02">
+      <div class="sub_title_div">
+        <div class="line"></div> <!--Yellow line-->
+        <h6 class="sub_title" style="font-size: 18px;">Hiking Essentials</h6>
+      </div>
+      <h1 style="font-size: 64px; margin-bottom: 50px;">Picking the right<br>Hiking gear!</h1>
+      <p class="text">The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
+        Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.</p>
+      <h3 class="read_more">Read more...</h3>
+    </div>
+
+  </section>
+  
+  <section class="post_03">
+    <h1 class="background_number" style="left: 205px;">03</h1>
+    <div class="container_text01">
+      <div class="sub_title_div">
+        <div class="line"></div> <!--Yellow line-->
+        <h6 class="sub_title" style="font-size: 18px;">Where you go is the sky  </h6>
+      </div>
+      <h1 style="font-size: 64px; margin-bottom: 50px;">Picking the right<br>Hiking gear!</h1>
+      <p class="text">Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? </p>
+      <h3 class="read_more">Read more...</h3>
+    </div>
+
+    <img src="img/post_03.png" alt="img_post_01" class="reveal">
+  </section>
+  <footer>
+    <section class="footer_section">
+      <div style="margin-top: 50px;">
+        <h1 style="font-size: 32px; color: rgba(251, 215, 132, 1);">MNTN</h1>
+        <p class="text">Get out there & discover your next<br>slope, mountain & destination!</p>
+      </div>
+      <p style="opacity: .5;">Copyright 2019 MNTN, Inc. Terms & Privacy</p>
+    </section>
+    <section class="footer_section2">
+      <ul>
+        <li class="li_title">More on the Blog</li>
+        <li class="li_hover">About MNTN</li>
+        <li class="li_hover">Contributions & Writers</li>
+        <li class="li_hover">Write For Us</li>
+        <li class="li_hover">Contact Us</li>
+        <li class="li_hover">Privacy Policy</li>
+      </ul>
+      <ul>
+        <li class="li_title">More on MNTN</li>
+        <li class="li_hover">The Team</li>
+        <li class="li_hover">Jobs</li>
+        <li class="li_hover">Press</li>
+      </ul>
+    </section>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
